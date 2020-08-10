@@ -299,6 +299,9 @@ def main():
 if __name__ == '__main__':
     # export LD_LIBRARY_PATH=/home/numair/Pictures/cudd/cudd/.libs/;export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/numair/Pictures/libpoly/build/src/
     # storm --benchmark=/home/numair/Downloads/smt_benchmarks --solverbin=/home/numair/z3Build/bin/z3 --solver=z3 --server= ??? --theory= ??? --cores= ???
+    #
+    # smt-interpol
+    # storm --benchmark=/home/numair/Downloads/smt_benchmarks --solverbin="java -jar /home/numair/smtinterpol/dist/smtinterpol-2.5-715-g3a7695dc.jar -q -no-success" --solver=smtinterpol --server=pinky21 --cores=30
 
     # Replication
     # If we want to refind a bug with a seed. If we want to find the seed. Use the above command

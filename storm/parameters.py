@@ -27,7 +27,7 @@ def get_supported_theories(solver):
                    "QF_UFNRA", "UFDTLIA", "AUFDTLIA", "AUFNIRA", "NIA", "QF_ANIA", "QF_AX", "QF_FP", "QF_NIA",
                     "QF_UFLIA", "UFLIA", "AUFLIA", "BV", "NRA", "QF_AUFBV", "QF_BV", "QF_IDL", "QF_NIRA",
                    "QF_UF", "QF_UFLRA", "UF", "UFLRA", "AUFLIRA", "LIA", "QF_ABV", "QF_AUFLIA", "QF_BVFP",
-                   "QF_LIA", "QF_NRA", "QF_UFBV", "QF_UFNIA", "UFDT", "UFNIA", "QF_S"],
+                   "QF_LIA", "QF_NRA", "QF_UFBV", "QF_UFNIA", "UFDT", "UFNIA", "QF_S", "QF_LIRA"],
 
                 "yices": ["QF_ABV", "QF_ALIA", "QF_AUFBV", "QF_AUFLIA", "QF_AX", "QF_BV", "QF_IDL", "QF_LIA", "QF_LIRA",
                   "QF_LRA", "QF_NIA", "QF_NIRA", "QF_NRA", "QF_RDL", "QF_UF", "QF_UFBV", "QF_UFIDL", "QF_UFLIA",
@@ -36,10 +36,9 @@ def get_supported_theories(solver):
 
                 "z3str3" : ["QF_S"],
 
-                "smtinterpol" : ["QF_ABV", "QF_ALIA", "QF_AUFBV", "QF_AUFLIA", "QF_AX", "QF_BV", "QF_IDL", "QF_LIA", "QF_LIRA",
-                  "QF_LRA", "QF_NIA", "QF_NIRA", "QF_NRA", "QF_RDL", "QF_UF", "QF_UFBV", "QF_UFIDL", "QF_UFLIA",
-                  "QF_UFLRA", "QF_UFNIA", "QF_UFNIRA", "QF_UFNRA", "LRA",
-                  "UFLRA"]
+                "smtinterpol" : ["ALIA", "AUFLIA", "AUFLIRA", "LIA", "LRA", "QF_ALIA", "QF_AUFLIA", "QF_AX", "QF_IDL",
+                                 "QF_LIA", "QF_LIRA", "QF_LRA", "QF_RDL", "QF_UF", "QF_UFIDL", "QF_UFLIA", "QF_UFLRA",
+                                 "UF", "UFIDL", "UFLIA", "UFLRA"]
     }
     return theories[solver]
 
